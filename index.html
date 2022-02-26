@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-    href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
-    rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/destyle.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -16,103 +16,98 @@
   <body>
     <div id="wrapper">
       <div class="content">
-        <img id="img1" src="./images/image1.png" onclick="popupOpen()" alt="画像" />
-        <img id="img2" src="./images/image2.png" onclick="popupOpen2()" alt="画像" />
-        <img id="img3" src="./images/image3.png" onclick="popupOpen3()" alt="画像" />
-        <img id="img4" src="./images/image4.png" onclick="popupOpen4()" alt="画像" />
-        <img id="img5" src="./images/image5.png" onclick="popupOpen5()" alt="画像" />
+        <img src="./images/image1.png" onclick="popupOpen1()" alt="画像" />
+        <img src="./images/image2.png" onclick="popupOpen2()" alt="画像" />
+        <img src="./images/image3.png" onclick="popupOpen3()" alt="画像" />
+        <img src="./images/image4.png" onclick="popupOpen4()" alt="画像" />
+        <img src="./images/image5.png" onclick="popupOpen5()" alt="画像" />
       </div>
     </div>
     <div id="popup" class="popup1" style="display: none">
-      <div id="close-btn"><button onclick="popupClose()" class="fas fa-times fa-2x"></button></button></div>
+      <div id="close-btn">
+        <button onclick="popupClose1()" class="fas fa-times fa-2x"></button>
+      </div>
       <div class="popup-wrapper">
         <img src="./images/image1.png" alt="ポップアップ画像" />
         <div class="popup-inner">
           <div class="popup-text">
             <label for="copy-link">ファイルのURL</label>
-            <input
-              id="copyTarget"
-              type="text"
-              value=""
-            />
-            <button onclick="copyUrl()">Copy URL</button>
+            <input id="copyTarget1" type="text" value="" />
+            <button onclick="copyUrl1()">Copy URL</button>
             <p style="display: none">コピーしました。</p>
           </div>
         </div>
       </div>
     </div>
     <div id="popup" class="popup2" style="display: none">
-      <div id="close-btn"><button onclick="popupClose()" class="fas fa-times fa-2x"></button></button></div>
+      <div id="close-btn">
+        <button onclick="popupClose2()" class="fas fa-times fa-2x"></button>
+      </div>
       <div class="popup-wrapper">
         <img src="./images/image2.png" alt="ポップアップ画像" />
         <div class="popup-inner">
           <div class="popup-text">
             <label for="copy-link">ファイルのURL</label>
-            <input
-              id="copyTarget"
-              type="text"
-              value=""
-            />
-            <button onclick="copyUrl()">Copy URL</button>
+            <input id="copyTarget2" type="text" value="" />
+            <button onclick="copyUrl2()">Copy URL</button>
             <p style="display: none">コピーしました。</p>
           </div>
         </div>
       </div>
     </div>
     <div id="popup" class="popup3" style="display: none">
-      <div id="close-btn"><button onclick="popupClose()" class="fas fa-times fa-2x"></button></button></div>
+      <div id="close-btn">
+        <button onclick="popupClose3()" class="fas fa-times fa-2x"></button>
+      </div>
       <div class="popup-wrapper">
         <img src="./images/image3.png" alt="ポップアップ画像" />
         <div class="popup-inner">
           <div class="popup-text">
             <label for="copy-link">ファイルのURL</label>
-            <input
-              id="copyTarget"
-              type="text"
-              value=""
-            />
-            <button onclick="copyUrl()">Copy URL</button>
+            <input id="copyTarget3" type="text" value="" />
+            <button onclick="copyUrl3()">Copy URL</button>
             <p style="display: none">コピーしました。</p>
           </div>
         </div>
       </div>
     </div>
     <div id="popup" class="popup4" style="display: none">
-      <div id="close-btn"><button onclick="popupClose()" class="fas fa-times fa-2x"></button></button></div>
+      <div id="close-btn">
+        <button onclick="popupClose4()" class="fas fa-times fa-2x"></button>
+      </div>
       <div class="popup-wrapper">
         <img src="./images/image4.png" alt="ポップアップ画像" />
         <div class="popup-inner">
           <div class="popup-text">
             <label for="copy-link">ファイルのURL</label>
-            <input
-              id="copyTarget"
-              type="text"
-              value=""
-            />
-            <button onclick="copyUrl()">Copy URL</button>
+            <input id="copyTarget4" type="text" value="" />
+            <button onclick="copyUrl4()">Copy URL</button>
             <p style="display: none">コピーしました。</p>
           </div>
         </div>
       </div>
     </div>
     <div id="popup" class="popup5" style="display: none">
-      <div id="close-btn"><button onclick="popupClose()" class="fas fa-times fa-2x"></button></button></div>
+      <div id="close-btn">
+        <button onclick="popupClose5()" class="fas fa-times fa-2x"></button>
+      </div>
       <div class="popup-wrapper">
         <img src="./images/image5.png" alt="ポップアップ画像" />
         <div class="popup-inner">
           <div class="popup-text">
             <label for="copy-link">ファイルのURL</label>
-            <input
-              id="copyTarget"
-              type="text"
-              value=""
-            />
-            <button onclick="copyUrl()">Copy URL</button>
+            <input id="copyTarget5" type="text" value="" />
+            <button onclick="copyUrl5()">Copy URL</button>
             <p style="display: none">コピーしました。</p>
           </div>
         </div>
       </div>
     </div>
-    <div id="js-black-bg" class="black-background" style="display: none" onclick="popupClose()"></div>
+    <div
+      id="js-black-bg"
+      class="black-background"
+      style="display: none"
+      onclick="bgClose()"
+    ></div>
   </body>
 </html>
