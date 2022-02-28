@@ -16,8 +16,8 @@ body {
 .content img {
   display: block;
   float: left;
-  width: 25rem;
-  height: 25rem;
+  width: 20rem;
+  height: 20rem;
   object-fit: cover;
   cursor: pointer;
   padding: 1rem;
@@ -37,13 +37,13 @@ body {
 .popup-wrapper {
   width: 80%;
   display: flex;
-  padding: 10%;
+  padding: 5%;
   margin: auto;
 }
 .popup-inner {
   width: 50%;
   height: auto;
-  padding: 5rem 0 5rem 5rem;
+  margin: auto;
 }
 #close-btn {
   padding: 1rem 1rem 0 0;
@@ -53,14 +53,16 @@ body {
   cursor: pointer;
 }
 #popup img {
-  width: 50%;
+  max-height: 40rem;
+  margin: 0 auto;
+  object-fit: cover;
 }
 .popup-text {
-  width: 50%;
   font-size: 1rem;
   display: flex;
   width: 100%;
   flex-direction: column;
+  text-align: center;
 }
 .popup-text label {
   font-size: 2rem;

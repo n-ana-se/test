@@ -16,88 +16,24 @@
   <body>
     <div id="wrapper">
       <div class="content">
-        <img src="./images/image1.png" onclick="popupOpen1()" alt="画像" />
-        <img src="./images/image2.png" onclick="popupOpen2()" alt="画像" />
-        <img src="./images/image3.png" onclick="popupOpen3()" alt="画像" />
-        <img src="./images/image4.png" onclick="popupOpen4()" alt="画像" />
-        <img src="./images/image5.png" onclick="popupOpen5()" alt="画像" />
+        <img onclick="popupOpen()" src="./images/image1.png" alt="画像1" />
+        <img onclick="popupOpen()" src="./images/image2.png" alt="画像2" />
+        <img onclick="popupOpen()" src="./images/image3.png" alt="画像3" />
+        <img onclick="popupOpen()" src="./images/image4.png" alt="画像4" />
+        <img onclick="popupOpen()" src="./images/image5.png" alt="画像5" />
       </div>
     </div>
-    <div id="popup" class="popup1" style="display: none">
+    <div id="popup" class="popup" style="display: none">
       <div id="close-btn">
-        <button onclick="popupClose1()" class="fas fa-times fa-2x"></button>
+        <button onclick="popupClose()" class="fas fa-times fa-2x"></button>
       </div>
       <div class="popup-wrapper">
-        <img src="./images/image1.png" alt="ポップアップ画像" />
+        <img alt="ポップアップ画像" />
         <div class="popup-inner">
           <div class="popup-text">
             <label for="copy-link">ファイルのURL</label>
-            <input id="copyTarget1" type="text" value="" />
-            <button onclick="copyUrl1()">Copy URL</button>
-            <p style="display: none">コピーしました。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="popup" class="popup2" style="display: none">
-      <div id="close-btn">
-        <button onclick="popupClose2()" class="fas fa-times fa-2x"></button>
-      </div>
-      <div class="popup-wrapper">
-        <img src="./images/image2.png" alt="ポップアップ画像" />
-        <div class="popup-inner">
-          <div class="popup-text">
-            <label for="copy-link">ファイルのURL</label>
-            <input id="copyTarget2" type="text" value="" />
-            <button onclick="copyUrl2()">Copy URL</button>
-            <p style="display: none">コピーしました。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="popup" class="popup3" style="display: none">
-      <div id="close-btn">
-        <button onclick="popupClose3()" class="fas fa-times fa-2x"></button>
-      </div>
-      <div class="popup-wrapper">
-        <img src="./images/image3.png" alt="ポップアップ画像" />
-        <div class="popup-inner">
-          <div class="popup-text">
-            <label for="copy-link">ファイルのURL</label>
-            <input id="copyTarget3" type="text" value="" />
-            <button onclick="copyUrl3()">Copy URL</button>
-            <p style="display: none">コピーしました。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="popup" class="popup4" style="display: none">
-      <div id="close-btn">
-        <button onclick="popupClose4()" class="fas fa-times fa-2x"></button>
-      </div>
-      <div class="popup-wrapper">
-        <img src="./images/image4.png" alt="ポップアップ画像" />
-        <div class="popup-inner">
-          <div class="popup-text">
-            <label for="copy-link">ファイルのURL</label>
-            <input id="copyTarget4" type="text" value="" />
-            <button onclick="copyUrl4()">Copy URL</button>
-            <p style="display: none">コピーしました。</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="popup" class="popup5" style="display: none">
-      <div id="close-btn">
-        <button onclick="popupClose5()" class="fas fa-times fa-2x"></button>
-      </div>
-      <div class="popup-wrapper">
-        <img src="./images/image5.png" alt="ポップアップ画像" />
-        <div class="popup-inner">
-          <div class="popup-text">
-            <label for="copy-link">ファイルのURL</label>
-            <input id="copyTarget5" type="text" value="" />
-            <button onclick="copyUrl5()">Copy URL</button>
+            <input id="copyTarget" type="text" />
+            <button onclick="copyUrl()">Copy URL</button>
             <p style="display: none">コピーしました。</p>
           </div>
         </div>
